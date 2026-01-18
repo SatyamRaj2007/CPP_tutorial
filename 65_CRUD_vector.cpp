@@ -30,6 +30,8 @@ int main() {
         cout << vec[i] << " ";
     }
 
+    cout<<endl;
+
     vec.pop_back();
 
     cout << "\nafter deleting element in vector:\n";
