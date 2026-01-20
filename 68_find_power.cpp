@@ -1,15 +1,15 @@
 #include<iostream>
 using namespace std;
-int powerof(int num, int power){
+long powerof(long num, long power){
     int pow=1;
     for(int i=1;i<=power;i++){
         pow*=num;
     }
-
+    
     return pow;
 }
 int main(){
-    int x,n;
+    long long x,n;
     cout<<"enter base:"<<endl;
     cin>>x;
 
