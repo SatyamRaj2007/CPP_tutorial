@@ -9,14 +9,13 @@ public:
     Solution(int x) {
         n=x;
     }
-    Solution(const Solution &s) {
+    Solution(Solution &s) {
         n=s.n;
     }
     int sum(int x) {
         return n+x;
     }
 };
-
 int main() {
     Solution obj1(10);    
     Solution obj2=obj1;  
