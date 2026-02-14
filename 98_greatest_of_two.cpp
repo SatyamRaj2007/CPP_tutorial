@@ -9,27 +9,21 @@ class Greater {
         a = x;
     }
 };
-
-class A : public Greater {
+class A:public Greater{
 public:
     int b;
 
-    A(int x, int y) : Greater(x) {   
+    A(int x,int y):Greater(x) {   
         b = y;
     }
 };
-
-
-class Compare : public A {
+class Compare:public A{
 public:
-    Compare(int x, int y) : A(x, y) {}
-
-    
+    Compare(int x, int y): A(x,y) {}
     int findGreater() {
         return max(a, b);
     }
-
-    void display() {
+    void display(){
         cout << a <<" "<<endl;
         cout <<  b <<" "<< endl;
         cout <<  findGreater() <<" "<< endl;
@@ -37,12 +31,10 @@ public:
 };
 
 int main() {
-    int x, y;
-    cin >> x >> y;
-
-    Compare c(x, y);
+    int x,y;
+    cin >>x>>y;
+    Compare c(x,y);
     c.display();
-
     return 0;
 }
 
