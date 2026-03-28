@@ -17,7 +17,7 @@ class A{
 };
 void operator++(A &obj){
         --obj.x;
-    }
+}
 int main(){
     A obj(5);
     ++obj;
