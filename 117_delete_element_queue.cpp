@@ -28,6 +28,18 @@ class queue {
             cout << "Deleted element: " << arr[front] << endl;
         }
     }
+    void display() {
+        if(front==rear) {
+            cout << "Queue is empty" << endl;
+        }
+        else {
+            cout << "Queue elements: ";
+            for(int i=front+1; i<=rear; i++) {
+                cout << arr[i] << " ";
+            }
+            cout << endl;
+        }
+    }
 };
 int main() {
     queue q;
@@ -36,10 +48,13 @@ int main() {
     q.enqueue(30);
     q.enqueue(40);
     q.enqueue(50);
+    q.display();
     q.dequeue();
     q.dequeue();
     q.dequeue();
+    q.display();
     q.dequeue();
     q.dequeue();
+    q.display();
     return 0;
 }
