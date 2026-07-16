@@ -2,8 +2,15 @@
 using namespace std;
 
 int main() {
-    int arr[] = {2, 5, 4, 6, 8, 7};
-    int n = sizeof(arr) / sizeof(arr[0]);
+    int n;
+    cout << "Enter the size of the array: ";
+    cin >> n;
+    int arr[n];
+
+    cout << "Enter the elements of the array: ";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
 
     int start = 0, end = n - 1;
 
